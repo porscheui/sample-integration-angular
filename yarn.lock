@@ -1164,18 +1164,18 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@porsche-design-system/components-angular@2.0.0-alpha.5":
-  version "2.0.0-alpha.5"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.5.tgz#44139a55b55d1506f84f06195e3956b2d84bba16"
-  integrity sha1-RBOaVbVdFQb4TwYZXjlWsthLuhY=
+"@porsche-design-system/components-angular@2.0.0-alpha.6":
+  version "2.0.0-alpha.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-angular/-/@porsche-design-system/components-angular-2.0.0-alpha.6.tgz#0a71d4b4ee0308f6334d64091be904b81c250f7d"
+  integrity sha1-CnHUtO4DCPYzTWQJG+kEuBwlD30=
   dependencies:
-    "@porsche-design-system/components-js" "2.0.0-alpha.5"
+    "@porsche-design-system/components-js" "2.0.0-alpha.6"
     tslib "^2.0.1"
 
-"@porsche-design-system/components-js@2.0.0-alpha.5":
-  version "2.0.0-alpha.5"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.5.tgz#50572213e6782f4e0c1bd18f3ff0675dd7197120"
-  integrity sha1-UFciE+Z4L04MG9GPP/BnXdcZcSA=
+"@porsche-design-system/components-js@2.0.0-alpha.6":
+  version "2.0.0-alpha.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.6.tgz#2d307d7629dc983881cc552aa427ca0af501c2bd"
+  integrity sha1-LTB9dincmDiBzFUqpCfKCvUBwr0=
 
 "@porsche-design-system/utilities@2.0.0":
   version "2.0.0"
