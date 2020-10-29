@@ -3,73 +3,72 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'collection-page',
   template: `
-    <p-grid>
-      <p-grid-item size="12">
-        <p-headline variant="headline-4">Buttons</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</p-button>
-      </p-grid-item>
-      <p-grid-item size="12" class="contentWrapperSmall">
-        <p-button-pure [disabled]="!isDisabled" (click)="onButtonPureClick()">Dismiss</p-button-pure>
-      </p-grid-item>
-      <p-grid-item size="12" class="contentWrapperSmall">
-        <p-headline id="headline" variant="headline-4">{{ headlineText }}</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-4">Links</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <a href="https://www.porsche.com" class="removeLinkStyle">
-          <p-link>porsche.com</p-link>
-        </a>
-      </p-grid-item>
-      <p-grid-item size="12" class="contentWrapperBig">
-        <a href="#hashTest" class="removeLinkStyle">
-          <p-link-pure>Test PLinkPure</p-link-pure>
-        </a>
-        <p-link-pure href="#propHashTest">Test propHash</p-link-pure>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-4">Icons</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-spinner size="small"></p-spinner>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-icon size="medium" name="highway" role="img"></p-icon>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-divider class="divider"></p-divider>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-headline variant="headline-4">You are on Page {{ activePage }} Page</p-headline>
-      </p-grid-item>
-      <p-grid-item size="12">
-        <p-pagination
+    <div>
+      <div size="12">
+        <sample-prefix-p-headline variant="headline-4">Buttons</sample-prefix-p-headline>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-button [disabled]="isDisabled" (click)="onButtonClick()">Submit</sample-prefix-p-button>
+      </div>
+      <div size="12" class="contentWrapperSmall">
+        <sample-prefix-p-button-pure [disabled]="!isDisabled" (click)="onButtonPureClick()"
+          >Dismiss</sample-prefix-p-button-pure
+        >
+      </div>
+      <div size="12" class="contentWrapperSmall">
+        <sample-prefix-p-headline id="headline" variant="headline-4">{{ headlineText }}</sample-prefix-p-headline>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-headline variant="headline-4">Links</sample-prefix-p-headline>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-link href="https://www.porsche.com">porsche.com</sample-prefix-p-link>
+      </div>
+      <div size="12" class="contentWrapperBig">
+        <sample-prefix-p-link-pure p-link-pure [href]="'https://www.porsche.com'">Test PLinkPure</sample-prefix-p-link-pure>
+        <sample-prefix-p-link-pure p-link-pure [href]="'#propHashTest'" [size]="'medium'">Test propHash</sample-prefix-p-link-pure>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-headline variant="headline-4">Icons</sample-prefix-p-headline>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-spinner size="small"></sample-prefix-p-spinner>
+      </div>
+      <div size="12">
+        <sample-prefix-p-icon size="medium" name="highway" role="img"></sample-prefix-p-icon>
+      </div>
+      <div size="12">
+        <sample-prefix-p-divider class="divider"></sample-prefix-p-divider>
+      </div>
+      <div size="12">
+        <sample-prefix-p-headline variant="headline-4">You are on Page {{ activePage }} Page</sample-prefix-p-headline>
+      </div>
+      <div size="12">
+        <sample-prefix-p-pagination
+          p-pagination
           totalItemsCount="11"
           itemsPerPage="3"
           [activePage]="activePage"
           (pageChange)="handleActivePage($event)"
-        ></p-pagination>
-      </p-grid-item>
-    </p-grid>
-  `
+        ></sample-prefix-p-pagination>
+      </div>
+    </div>
+  `,
 })
 export class CollectionPage {
   headlineText = '';
