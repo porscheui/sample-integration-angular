@@ -6,10 +6,25 @@ import { color, text } from '@porsche-design-system/utilities';
  */
 @Component({
   selector: `utilities-page`,
-  template: ` <div [style]="textMedium">JS utilities</div>
-    <div [ngStyle]="{ width: '50px', height: '50px', background: backgroundColor }"></div>
-    <div class="textSizeMedium">Scss utilities</div>
-    <div style="width: 50px; height: 50px;" class="backgroundColorPds"></div>`,
+  template: `
+    <div class="left">
+      <br>
+      <br>
+      <button>Some native button</button>
+      <br>
+      <br>
+      <p-button>Some custom element button</p-button>
+    </div>
+    <div class="right">
+      <br>
+      <br>
+      <h1>Some native headline</h1>
+      <br>
+      <br>
+      <p-headline>Some custom element headline</p-headline>
+    </div>
+
+  `,
   styleUrls: ['./utilities.page.scss'],
 })
 export class UtilitiesPage {

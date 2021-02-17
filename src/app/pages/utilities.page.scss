@@ -7,3 +7,35 @@
 .textSizeMedium {
   @include p-text-medium;
 }
+
+.left,
+.right {
+  float:left;
+  width:50%;
+}
+
+h1 {
+  @include p-headline-1;
+}
+
+button {
+  @include p-focus($p-color-neutral-contrast-high);
+  display: flex;
+  width: 100%;
+  min-width: p-px-to-rem(48px);
+  min-height: p-px-to-rem(48px);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  appearance: none;
+  text-decoration: none;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+
+  color: $p-color-theme-dark-default;
+  background-color: $p-color-neutral-contrast-high;
+  border-color: $p-color-neutral-contrast-high;
+}
